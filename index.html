@@ -27,7 +27,7 @@
         </div>
         <ol>
          <li ng-repeat="item in toBuy.items">
-          Buy {{ item.quantity }} of {{ item.name }}
+          Buy {{ item.quantity }} {{ item.name }}
           <button ng-click="toBuy.removeItem($index);" ng-if="false">Remove Item</button>
           <button ng-click="toBuy.boughtItem($index);">Bought</button>
          </li>
@@ -47,7 +47,7 @@
       </div>
       <ol>
         <li ng-repeat="item in alreadybought.items">
-          Bought {{ item.quantity }} of {{ item.name }}
+          Bought {{ item.quantity }} {{ item.name }}
           <button ng-click="alreadybought.removeItem($index);" ng-if="false">Remove Item</button>
         </li>
       </ol>

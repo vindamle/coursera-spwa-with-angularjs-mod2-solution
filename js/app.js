@@ -38,7 +38,6 @@ AlreadyBoughtShoppingController.$inject = ['ShoppingListCheckOffService'];
 function AlreadyBoughtShoppingController(ShoppingListCheckOffService) {
   var alreadybought = this;
 
-  // Use factory to create new shopping list service
   var shoppingListCheckoff = ShoppingListCheckOffService;
 
   alreadybought.items = shoppingListCheckoff.getItemsBought();
@@ -61,7 +60,6 @@ function AlreadyBoughtShoppingController(ShoppingListCheckOffService) {
 }
 
 
-// If not specified, maxItems assumed unlimited
 function ShoppingListCheckOffService() {
   var service = this;
 
